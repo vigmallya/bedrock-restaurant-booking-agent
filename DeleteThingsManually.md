@@ -1,16 +1,16 @@
 1. Amazon Bedrock Console
 Agents (Bedrock → Agents):
 
-booking-agent (id FHLMTDII4U) — delete this (deletes its aliases TestAlias and the default TSTALIASID automatically, and its action group TableBookingsActionGroup with it)
+booking-agent — delete this (deletes its aliases TestAlias and the default TSTALIASID automatically, and its action group TableBookingsActionGroup with it)
 Also check for any leftover test agents that may not have been cleaned up: booking-agent-test45eu, booking-agent-test — I gave you delete commands for these earlier, but double-check they're actually gone from the list
 
 Knowledge Bases (Bedrock → Knowledge Bases):
 
-booking-agent-kb (id LNRJPLOZNW) — delete this (deletes its data source too)
+booking-agent-kb — delete this (deletes its data source too)
 
 2. Amazon OpenSearch Service Console → Serverless → Collections
 
-Collection: bedrock-sample-rag-8814 (id eiekquy8w8aedp4uteic) — this is the one that bills hourly, don't leave it behind
+Collection: bedrock-sample-rag-8814 — this is the one that bills hourly, don't leave it behind
 
 Same page, tab for Security policies:
 
@@ -31,7 +31,7 @@ Table: restaurant_bookings
 
 5. Amazon S3 Console
 
-Bucket: booking-agent-eu-central-1-881490086144 — empty it first (select all objects → delete), then delete the bucket itself
+Bucket: booking-agent-eu-central-1-ID — empty it first (select all objects → delete), then delete the bucket itself
 
 6. IAM Console
 Roles (IAM → Roles):
